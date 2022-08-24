@@ -80,7 +80,7 @@ server <- function(input, output) {
              )
       
       #y axis title #y axis titles not working
-      yaxistitle <- ifelse(input$measure == "Years", "Difference from previous year in years", "Difference from previous year in weeks")
+      yaxistitle <- ifelse(input$measure == "Life Expectancy", "Life Expectancy", "Healthy Life Expectancy")
       
       plot <- plot_ly(data_difference, x=~Year, y = ~Value, 
                       type = "scatter", mode = 'lines', line = list(color = '#08519c'),
